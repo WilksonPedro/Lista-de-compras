@@ -52,3 +52,9 @@ h1 {
     margin-right: 23.12rem;
     flex-direction: column;
 }
+
+@media (max-width: 30rem) {
+    h1, .logo {
+        display: none;
+    }
+}

@@ -1,5 +1,6 @@
 .title {
     margin-bottom: 2.75rem;
     color: var(--content-primary);
-
+    font: var(--h1);
+    line-height: 2rem;
 }
