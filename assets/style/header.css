@@ -1,7 +1,6 @@
 .logo {
+    display: flex;
     height: 40px;
-    justify-content: center;
-    align-items: center;
     gap: 7px;
     font-weight: 700;
     line-height: 2.5rem;
@@ -9,3 +8,8 @@
     margin-bottom: 3.87rem;
 }
 
+@media (max-width: 30rem) {
+    .logo {
+        display: none;
+    }
+}

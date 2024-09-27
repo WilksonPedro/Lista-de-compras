@@ -34,27 +34,14 @@
 
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
     font: var(--paragraph);
     background-color: var(--bg-primary);
 }
 
 h1 {
     font: var(--h1);
-}
-
-.flex {
-    display: flex;
-}
-
-.container {
-    border: solid 5px var(--border-primary);
-    margin-left: 23.06rem;
-    margin-right: 23.12rem;
-    flex-direction: column;
-}
-
-@media (max-width: 30rem) {
-    h1, .logo {
-        display: none;
-    }
 }

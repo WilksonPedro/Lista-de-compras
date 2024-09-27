@@ -4,3 +4,8 @@
     font: var(--h1);
     line-height: 2rem;
 }
+
+.back {
+    margin-top: 4.875rem;
+    margin-bottom: 1rem;
+} 

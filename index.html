@@ -14,26 +14,28 @@
 </head>
 
 <body>
-    <header class="flex logo">
+    <header class="logo">
         <img src="/assets/icons/logo.svg" alt="logo em forma de S">
         <h1>quicklist</h1>
     </header>
 
-    <main class="flex container">
-        <section class="back">
+    <main>
+        <div class="back">
             <a href="#"><img src="assets/icons/arrow.svg" alt="botão de voltar"></a>
-        </section>
+        </div>
 
         <section class="list">
             <div class="title">
                 <h2>Compras da semana</h2>
             </div>
-
-            <form class="form">
-                <input id="itemList" type="text" placeholder="Adicione um novo item">
-                <button>Adicionar item</button>
-            </form>
+            <div id="form">
+                <form class="form-input">
+                    <input id="itemList" type="text" placeholder="Adicione um novo item">
+                    <button>Adicionar item</button>
+                </form>
+            </div>
         </section>
+    </main>
 </body>
 
-</html>
+</html> 

@@ -1,0 +1,26 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & #itemList {
+        border-radius: 12px;
+        width: 20.375rem;
+        height: 2.75rem;
+        padding: 1.125rem;
+    }
+
+    & button {
+        padding: 10px 24px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 30rem) {
+    .form-input {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        
+    }
+}
