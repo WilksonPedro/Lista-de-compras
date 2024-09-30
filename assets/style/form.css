@@ -8,11 +8,33 @@
         width: 20.375rem;
         height: 2.75rem;
         padding: 1.125rem;
+        border: 2px solid var(--border-primary)
+    }
+
+    & #itemList:hover {
+        border: 2px solid var(--border-hover);
+        background: var(--bg-secondary);
+    }
+
+    & #itemList:focus {
+        /*
+        para alterar a borda padrão do input, é necessário remover o outline padrão do navegador
+        */
+        outline: none;
+        border: 2px solid var(--color-brand);
     }
 
     & button {
+        border: none;
+        color: var(--bg-secondary);
         padding: 10px 24px;
         border-radius: 12px;
+        background-color: var(--color-brand);
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-color: var(--color-hover);
     }
 }
 
@@ -24,3 +46,4 @@
         
     }
 }
+
