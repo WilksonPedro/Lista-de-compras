@@ -19,7 +19,7 @@
     --color-danger: #c93847;
 
     --content-primary: #080b12;
-    --content-seondary: #374151;
+    --content-secondary: #374151;
     --content-tertiary: #9ca3af;
 
     --border-primary: #d1d5db;
@@ -44,4 +44,8 @@ body {
 
 h1 {
     font: var(--h1);
+}
+
+.flex {
+display: flex; 
 }
