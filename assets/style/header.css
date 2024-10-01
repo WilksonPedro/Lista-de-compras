@@ -1,15 +1,16 @@
 .logo {
+  display: none;
+}
+
+@media (width >= 30rem) {
+  .logo {
     display: flex;
+    justify-content: center;
     height: 40px;
     gap: 7px;
     font-weight: 700;
     line-height: 2.5rem;
     margin-top: 25px;
     margin-bottom: 3.87rem;
-}
-
-@media (max-width: 30rem) {
-    .logo {
-        display: none;
-    }
+  }
 }
