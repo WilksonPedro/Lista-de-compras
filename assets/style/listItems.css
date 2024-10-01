@@ -13,8 +13,17 @@
     justify-content: space-between;
     height: 3.562rem;
     width: 100%;
-    padding: 0.75rem;
+    padding: 1rem;
     border-radius: 0.75rem;
     background: var(--bg-secondary);
   }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  margin-left: 1rem;
 }
