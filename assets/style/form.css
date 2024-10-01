@@ -6,6 +6,10 @@
     border-radius: 12px;
     width: 100%;
     height: 2.75rem;
+    /*
+    Padding-inline é usado para dar um espaçamento interno nas laterais igualmente. 
+    É uma tecnica de CSS que é usada para dar um espaçamento interno nas laterais de um elemento.
+    */
     padding-inline: 1.125rem;
     border: 2px solid var(--border-primary);
   }
