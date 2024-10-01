@@ -1,51 +1,60 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-    --bg-primary: #f4f5fb;
-    --bg-secondary: #ffffff;
+  --bg-primary: #f4f5fb;
+  --bg-secondary: #ffffff;
 
-    --color-brand: #ca3884;
-    --color-hover: #a52c6b;
-    --color-danger: #c93847;
+  --color-brand: #ca3884;
+  --color-hover: #a52c6b;
+  --color-danger: #c93847;
 
-    --content-primary: #080b12;
-    --content-secondary: #374151;
-    --content-tertiary: #9ca3af;
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
 
-    --border-primary: #d1d5db;
-    --border-hover: #b9c2d0;
-    
-    --font-family: "Inter", sans-serif;
-    --h1: 700 1.5rem/2rem var(--font-family);
-    --label: 600 1rem/1.25rem var(--font-family);
-    --paragraph: 400 1rem/1.5rem var(--font-family);
-    --link: 400 .875rem/1rem var(--font-family);
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
+
+  --font-family: "Inter", sans-serif;
+  --h1: 700 1.5rem/2rem var(--font-family);
+  --label: 600 1rem/1.25rem var(--font-family);
+  --paragraph: 400 1rem/1.5rem var(--font-family);
+  --link: 400 0.875rem/1rem var(--font-family);
 }
 
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;;
-    font: var(--paragraph);
-    background-color: var(--bg-primary);
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  font: var(--paragraph);
+  background-color: var(--bg-primary);
+}
+
+main {
+  padding-inline: 2rem;
 }
 
 h1 {
-    font: var(--h1);
+  font: var(--h1);
 }
 
 .flex {
-display: flex; 
+  display: flex;
+}
+
+@media (width >= 30rem) {
+  main {
+    max-width: 37.5rem;
+    margin-inline: auto;
+  }
 }

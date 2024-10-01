@@ -1,27 +1,20 @@
 .shopping-list {
-    display: flex;
-    margin-top: 2.5rem;
+  display: flex;
+  margin-top: 2.5rem;
 
-    & .list-checkbox{
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+  & .list-checkbox {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
 
-    & li {
-        align-items: center;
-        justify-content: space-between;
-        height: 3.562rem;
-        width: 100%;
-        padding: 0.75rem;
-        border-radius: 0.75rem;
-        background: var(--bg-secondary);
-    }
-}
-
-@media (min-width: 30rem){
-    .shopping-list {
-        & li {
-            width: 39.187rem;
-        }
-    }
+  & li {
+    align-items: center;
+    justify-content: space-between;
+    height: 3.562rem;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background: var(--bg-secondary);
+  }
 }
