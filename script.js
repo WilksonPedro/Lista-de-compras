@@ -1,8 +1,8 @@
 const addItem = document.getElementById("itemList");
 const form = document.querySelector("form");
 const insertList = document.querySelector("ul");
-
 // Capturando o evento de input no campo de texto
+
 addItem.addEventListener("input", () => {
   const hasNumber = /[^a-zA-Z\s]/g;
   // Este regex permite apenas letras e espaços. O ^ é uma negação, ou seja, tudo
@@ -55,6 +55,11 @@ const addItemToList = (itemText) => {
   img.src = "assets/icons/delete-02-stroke-rounded.svg";
   img.alt = "";
 
+  img.addEventListener("click", () => {
+    li.remove();
+    div1.appendChild(itemDeleted());
+  });
+
   div2.appendChild(img);
 
   li.appendChild(div1);
@@ -62,3 +67,23 @@ const addItemToList = (itemText) => {
 
   insertList.appendChild(li);
 };
+
+function itemDeleted() {
+  const messagedeleted  = document.createElement('div');
+  messagedeleted.classList.add("message-deleted");
+  const exclamation = document.createElement('img');
+  const paragraph = document.createElement("p");
+
+  exclamation.src = "assets/icons/warning-circle-filled.svg";
+  paragraph.textContent = "Item deletado com sucesso!";
+
+  messagedeleted.appendChild(exclamation);
+  messagedeleted.appendChild(paragraph);
+
+  document.body.appendChild(messagedeleted);
+
+  setTimeout(() => {
+    messagedeleted.remove();
+  }, 3000);
+}
+

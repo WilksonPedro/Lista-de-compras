@@ -27,3 +27,18 @@
 .checkbox-container label {
   margin-left: 1rem;
 }
+
+.message-deleted {
+  width: 33.5rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0;
+  background-color: red;
+  font-size: 1.2rem;
+  gap: 1rem;
+  color: white;
+  font-weight: 600;
+}
